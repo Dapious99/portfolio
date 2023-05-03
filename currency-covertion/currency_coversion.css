@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#currencies{
+    border-radius: 25px;
+    background-color: papayawhip;
+    margin-top: 10px; ;
+}

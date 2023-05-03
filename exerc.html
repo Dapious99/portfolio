@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title> 
+    <link rel="stylesheet" href="CSS/styles2.css">
+</head>
+<body>
+    <nav id="navbar">
+      <span class="nav-brand">App</span>
+      <ul class="links">
+        <li class="nav-item">
+            <a href="about.html" class="about" target="_blank">About us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+        <div>
+            <h1 id="hello-id">Hello World!</h1>
+            <div>
+                <button id="add-btn"> Add </button>
+                <button id="clear-btn"> Clear </button>
+                <button id="remove-btn"> Remove </button>
+            </div>
+        </div>
+        <br /><br />
+        <div>
+
+            Hello World!  
+            
+        </div>
+    </div>
+
+    <footer id="footer-wrapper">
+        <a href="about.html" class="about" target="_blank">About us</a>
+        <a href="contact.html" class="contact" target="_blank">Contact us</a>
+    </footer>
+</body>
+
+<script>
+    document.querySelector('#add-btn').addEventListener('click', () => {
+        const initialValue = document.querySelector('#hello-id').textContent
+        const result = initialValue + 'Hello World!'
+        document.querySelector('#hello-id').textContent = result  
+    })    
+
+    document.querySelector('#clear-btn').addEventListener('click', () => {
+     document.querySelector('#hello-id').textContent = 'Hello World!'
+    })
+
+    document.querySelector('#remove-btn').addEventListener('click', () => {
+        const totalHello = (document.querySelector('#hello-id').textContent).length;
+        // if(totalHello > 12){
+        //     document.querySelector('#hello-id').textContent = totalHello.substring(0,totalHello.length-12)
+        // }
+        if(totalHello <= 12){
+            const result = 'Hello World!'
+            document.querySelector('#hello-id').textContent = result
+        }else{
+            const stringIt = document.querySelector('#hello-id').textContent
+            const final = stringIt.substring(0, stringIt.length-12);
+            document.querySelector('#hello-id').textContent = final;
+        }
+        })    
+</script>
+</html>
