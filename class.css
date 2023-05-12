@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    display :flex;
+    gap :10px;
+    background-color: white;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+}
+
+
+.children-div{
+    border: 2px black solid;
+    border-radius: 8px;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 25px 10px 5px 10px;
+    text-align: center;
+}
+
+.children-div > p {
+    font-size: 20px;
+}
+
+#pink-div{
+    background-color: rgb(222, 83, 106);
+    border: 2px rgb(222, 83, 106) solid;
+}
+
+#insta-text{
+    color: white;
+}
+
+#insta-head{
+    color: white;
+}
+
+.black-btn{
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 80px;
+    margin: 10px 0;
+}
+
+.black-btn:hover{
+    background-color: red;
+    color: goldenrod;
+}
+
+#white-btn{
+    border: 0;
+    background-color: white;
+    color: pink;
+}
+
+#white-btn:hover{
+    background-color: red;
+    color: goldenrod;
+}
+
+.black-icon i{
+    color: black;
+    margin-bottom: 5px;
+}
+
+#white-icon i{
+    color: white;
+    margin-bottom: 5px;
+}

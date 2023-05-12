@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojione/4.5.0/lib/js/emojione.min.js"> -->
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #bigdiv{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+    #container-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(65, 65, 146);
+        padding: 15px 10px;
+        width: 850px;
+    }
+    #heads-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        align-items: center;
+        padding: 5px 3px;
+        margin-bottom: 25px;
+    }
+    .heads{
+        color: white;
+    }
+    #cards-container{
+        display: flex;
+        gap: 15px;
+    }
+    .cards{
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 250px;
+        height: 350px;
+        background-color: white;
+        padding: 20px 0;
+        border-radius: 7px;
+        margin-top: 30px;
+    }
+    #middle-card{
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 250px;
+        height: 411px;
+        background-color: white;
+        border-radius: 7px;
+    }
+    .yellow-header{
+        color: goldenrod;
+    }
+    #personal-divlike{
+        background-color: bisque;
+        color: rgb(129, 18, 129);
+        padding: 7px 15px;
+    }
+    p{
+        color: gray;
+        font-size: 20px;
+    }
+    a{
+        color: rgb(129, 18, 129);
+    }
+    a:hover{
+        background-color: rebeccapurple;
+        color: white;
+        padding: 8px 45px;
+    }
+    h3{
+        color: rgb(129, 18, 129);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <div id="bigdiv">        
+        <div id="container-div">
+            <div id="heads-container">
+                <h5 class="heads">START  NOW</h5>
+                <h2 class="heads">Your plan, your choice.</h2>
+            </div>
+            <div id="cards-container">
+                <div class="cards">
+                    <h1>&#128559</h1>
+                    <h4 class="yellow-header">Starter</h4>
+                    <h3>$49</h3>
+                    <p>No setup fee</p>
+                    <p>Unlimited products</p>
+                    <p>Mobile storefront</p>
+                    <p>Mobile app</p>
+                    <a href="###">Get Started</a>
+                </div>
+                <div id="middle-card">
+                    <h4 id="personal-divlike">MOST POPULAR</h4>
+                    <h1>&#128513</h1>
+                    <h4 class="yellow-header">Personal</h4>
+                    <h3>$99</h3>
+                    <p>No setup fee</p>
+                    <p>Unlimited products</p>
+                    <p>Mobile storefront</p>
+                    <p>Mobile app</p>
+                    <a href="###">Get Started</a>
+                </div>
+                <div class="cards">
+                    <h1>&#128563</h1>
+                    <h4 class="yellow-header">Team</h4>
+                    <h3>$229</h3>
+                    <p>No setup fee</p>
+                    <p>Unlimited products</p>
+                    <p>Mobile storefront</p>
+                    <p>Mobile app</p>
+                    <a href="###">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

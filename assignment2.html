@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #big-div{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 5px 0; */
+    }
+    #container-div{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        background-color: darkslategray;
+        padding: 20px 0px;
+        /* width: 700px; */
+        gap:15px
+    }
+    #word-div{
+        padding: 30px 0;
+        flex-basis: 31%;
+    }
+    #word-div h3{
+        color: aquamarine;
+    }
+    #word-div p{
+        color: antiquewhite;
+    }
+    #pictures-big-div{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* flex-basis: 69%; */
+    }
+    #pictures-div{
+        display: flex;
+        /* justify-content: center; */
+        gap: 2px;
+    }
+    .pictures{
+        /* flex-basis: 23%; */
+        width: 120px;
+        height: 200px;
+        padding: 2px 2px;
+    }
+    .pictures img {
+        width: 120px;
+        height: 200px;
+        /* border: darkslategray; */
+    }
+    #names-div{
+        display: flex;
+        /* justify-content: center; */
+        gap: 35px;
+        margin-top: 5px;
+    }
+    #names-div p{
+        font-size: 10px;
+        color: white;
+    }
+</style>
+<body>
+    <div id="big-div">
+        <div id="container-div">
+            <div id="word-div">
+                <h3>Our <br> Speakers</h3>
+                <p>Hear from the people who made the magic happen</p>
+            </div>
+            <div id="pictures-big-div">
+                <div id="pictures-div">
+                    <div class="pictures">
+                        <img src="./L.Dean.jpg" alt="Lily Dean picture">
+                    </div>
+                    <div class="pictures">
+                        <img src="./v.porter.jpg" alt="Violet Porter picture">
+                    </div>
+                    <div class="pictures">
+                        <img src="./Richard B..jpg" alt="Richard Brito picture">
+                    </div>
+                </div>
+                <div id="names-div">
+                    <p><strong>Lily Dean</strong> <br> Creativity Researcher <br> Miskatonic University</p>
+                    <p><strong>Violet Porter</strong> <br> Senior Manager <br> MindBodyBalance, Inc.</p>
+                    <p><strong>Richard Brito</strong> <br> Developer <br> Ipsum Facto,LLC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
